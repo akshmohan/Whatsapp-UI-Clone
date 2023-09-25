@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/Colors.dart';
 import 'package:whatsapp_clone/info.dart';
+import 'package:whatsapp_clone/widgets/chat_list.dart';
 
 class MobileChatScreen extends StatelessWidget {
   const MobileChatScreen({super.key});
@@ -19,7 +20,12 @@ class MobileChatScreen extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
         ]
       ),
-      body: Column(
+      body: const Column(
+        children: [
+        Expanded(
+            child: ChatList(),
+        )
+        ],
 
     ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/Colors.dart';
+import 'package:whatsapp_clone/colors.dart';
+import 'package:whatsapp_clone/info.dart';
 
 class MyMessageCard extends StatelessWidget {
 
@@ -22,8 +23,8 @@ class MyMessageCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(8)
           ),
           color: messageColor,
-          margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5) ,
-          child: const Stack(
+          margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+          child: Stack(
             children: [
               Padding(padding: const EdgeInsets.only(
                 left: 10,
@@ -33,7 +34,8 @@ class MyMessageCard extends StatelessWidget {
               ),
                 child: Text(
                     message,
-                    style: const TextStyle(fontSize: 16)),
+                    style: const TextStyle(fontSize: 16)
+                ),
               ),
               Positioned(
                 bottom: 4,

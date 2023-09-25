@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/info.dart';
-import 'package:whatsapp_clone/widgets/message_dart.dart';
+import 'package:whatsapp_clone/widgets/my_message_dart.dart';
 import 'package:whatsapp_clone/widgets/sender_message.dart';
 
 
 class ChatList extends StatelessWidget {
-  const ChatList({super.key});
+  const ChatList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

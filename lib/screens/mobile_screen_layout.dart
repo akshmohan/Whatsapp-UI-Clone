@@ -45,7 +45,7 @@ class MobileScreenLayout extends StatelessWidget {
         ),
         body: const ContactsList(),
         floatingActionButton:Padding(
-          padding: const EdgeInsets.fromLTRB(8.0, 60, 30, 50),
+          padding: const EdgeInsets.fromLTRB(8.0, 60, 5, 1),
           child: FloatingActionButton(
               onPressed: () {},
               backgroundColor: tabColor,

@@ -6,7 +6,7 @@ import 'package:whatsapp_clone/screens/web_screen_layout.dart';
 
 
 void main() => runApp(MaterialApp(
-    home: ResponsiveLayout(mobileScreenLayout: const MobileScreenLayout(), webScreenLayout: const WebScreenLayout()),
+    home: const ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout()),
     theme: ThemeData.dark().copyWith(
       scaffoldBackgroundColor: backGroundColor
     ),
