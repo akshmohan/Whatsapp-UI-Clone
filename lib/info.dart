@@ -131,61 +131,62 @@ const messages = [
   },
 
   // 2nd chat
-  {"isMe": false, "text": "Hey What is up with you!!", "time": "10:00 am"},
-  {"isMe": true, "text": "im fine,wbu?", "time": "11:00 am"},
-  {"isMe": false, "text": "I am great man!", "time": "11:01 am"},
+
+  {"isMe": false, "text": "Where are you?", "time": "10:00 am"},
+  {"isMe": true, "text": "I'm home, you?", "time": "11:00 am"},
+  {"isMe": false, "text": "I'm in prison", "time": "11:01 am"},
   {
     "isMe": false,
-    "text": "Just messaged cuz I had some work.",
+    "text": "Just messaged cuz I needed some money",
     "time": "11:01 am"
   },
-  {"isMe": true, "text": "Obviously, say", "time": "11:03 am"},
+  {"isMe": true, "text": "Nah man I'm broke", "time": "11:03 am"},
   {
     "isMe": false,
-    "text": "haha I wanted you to check out my new channel ^^",
+    "text": "Come on man help a bro out",
     "time": "11:04 am"
   },
   {
     "isMe": true,
-    "text": " Sure, what is the channel name?",
+    "text": "Ok but I'll need a favor",
     "time": "11:05 am"
   },
   {
     "isMe": false,
-    "text": "Rivaan Ranawat",
+    "text": "What?",
     "time": "11:06 am",
   },
   {
     "isMe": true,
-    "text": "Looks great to me!",
+    "text": "It's gonna sound sus",
     "time": "11:15 am",
   },
 
 
-  {"isMe": false, "text": "Thanks bro!", "time": "11:17 am"},
+  {"isMe": false, "text": "Aw hell nah", "time": "11:17 am"},
   {
     "isMe": false,
-    "text": "Did you subscribe?",
+    "text": "Is it gonna hurt",
     "time": "11:16 am"
   },
   {
     "isMe": true,
-    "text": "Yes, surely bro!",
+    "text": "You betcha",
     "time": "11:17 am"
   },
   {
     "isMe": false,
-    "text": "Cool, did you like the content?",
+    "text": "Lord help me",
     "time": "11:18 am",
   },
   {
     "isMe": true,
-    "text": "I loved it?",
+    "text": "Hehe",
     "time": "11:19 am",
   },
   {
     "isMe": false,
-    "text": "OMG! Woah! Thanks!",
+    "text": ":(",
     "time": "11:20 am",
   },
 ];

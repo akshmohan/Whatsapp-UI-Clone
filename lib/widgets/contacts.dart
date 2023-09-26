@@ -1,4 +1,4 @@
-import 'package:whatsapp_clone/Colors.dart';
+import 'package:whatsapp_clone/colors.dart';
 import 'package:whatsapp_clone/info.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/screens/mobile_chat.dart';
@@ -22,7 +22,7 @@ class ContactsList extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => const MobileChatScreen()));
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => MobileChatScreen(index: index)));
                       },
                       child: Padding(
                         padding: const EdgeInsets.only(bottom: 1.0),
@@ -33,9 +33,13 @@ class ContactsList extends StatelessWidget {
                             child: Text(info[index]['message'].toString(),style: const TextStyle(fontSize: 15)
                             ),
                           ),
-                          leading: CircleAvatar(
-                               backgroundImage: NetworkImage(info[index]['profilePic'].toString()),
-                            radius: 30,
+                          leading: InkWell(
+                            onTap:() {
+                            },
+                            child: CircleAvatar(
+                                 backgroundImage: NetworkImage(info[index]['profilePic'].toString()),
+                              radius: 30,
+                            ),
                           ),
                           trailing: Text(info[index]['time'].toString(), style: const TextStyle(fontSize: 13, color: Colors.grey)
                         ),

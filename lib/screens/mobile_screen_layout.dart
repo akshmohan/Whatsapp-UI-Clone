@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:whatsapp_clone/Colors.dart';
+import 'package:whatsapp_clone/pages/calls.dart';
+import 'package:whatsapp_clone/pages/updates.dart';
 import 'package:whatsapp_clone/widgets/contacts.dart';
+import 'package:whatsapp_camera/whatsapp_camera.dart';
+
+
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -22,19 +29,27 @@ class MobileScreenLayout extends StatelessWidget {
               color: Colors.grey,
               fontSize: 20,
               fontWeight: FontWeight.bold
-          )),
+          )
+          ),
           centerTitle: false,
           actions: [
-            IconButton(onPressed: () {}, icon: const Icon(Icons.camera_alt), color: Colors.grey,),
+            IconButton(onPressed: () async {
+              List<File>? res = await Navigator.push(
+                context, MaterialPageRoute(
+                builder: (context) => const WhatsappCamera(),
+              ),
+              );
+              if(res !=null) files.value = res;
+            }, icon: const Icon(Icons.camera_alt), color: Colors.grey,),
             IconButton(onPressed: () {}, icon: const Icon(Icons.search), color: Colors.grey,),
             IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert), color: Colors.grey,)
           ],
-          bottom: const TabBar(
+          bottom: TabBar(
             indicatorColor: tabColor,
             indicatorWeight: 4,
             labelColor: tabColor,
             unselectedLabelColor: Colors.grey,
-            labelStyle: TextStyle(
+            labelStyle: const TextStyle(
               fontWeight: FontWeight.bold
             ),
             tabs: [
@@ -43,7 +58,13 @@ class MobileScreenLayout extends StatelessWidget {
             Tab(text: 'Calls')
           ],),
         ),
-        body: const ContactsList(),
+        body: TabBarView(
+            children: [
+              ContactsList(),
+              UpdatesPage(),
+              CallsPage()
+            ],
+        ),
         floatingActionButton:Padding(
           padding: const EdgeInsets.fromLTRB(8.0, 60, 5, 1),
           child: FloatingActionButton(

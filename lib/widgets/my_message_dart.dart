@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/colors.dart';
-import 'package:whatsapp_clone/info.dart';
 
 class MyMessageCard extends StatelessWidget {
 
@@ -50,7 +49,7 @@ class MyMessageCard extends StatelessWidget {
                     const Icon(
                         Icons.done_all,
                         size: 20,
-                        color: Colors.white60
+                        color: Colors.blue
                     ),
                   ],
                 ),

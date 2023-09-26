@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/colors.dart';
-import 'package:whatsapp_clone/info.dart';
-
 
 class SenderMessageCard extends StatelessWidget {
 
@@ -23,7 +21,7 @@ class SenderMessageCard extends StatelessWidget {
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8)
           ),
-          color: messageColor,
+          color: senderMessageColor,
           margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5) ,
           child: Stack(
             children: [
